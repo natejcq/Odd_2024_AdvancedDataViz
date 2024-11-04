@@ -1,0 +1,2175 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Hospital ER (Hospital ER)' inline='true' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Hospital ER' name='excel-direct.0nbbhxa0nzkfhv1eh6h5v04m0j70'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='K:/K DRIVE/BTech/zFinalY BTech/Sem 7/Advanced Data Visualization/EXPERIMENT6_202160009/Hospital ER.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0nbbhxa0nzkfhv1eh6h5v04m0j70' name='Hospital ER' table='[&apos;Hospital ER$&apos;]' type='table'>
+          <columns gridOrigin='A1:K9217:no:A1:K9217:0' header='yes' outcome='6'>
+            <column datatype='datetime' name='date' ordinal='0' />
+            <column datatype='string' name='patient_id' ordinal='1' />
+            <column datatype='string' name='patient_gender' ordinal='2' />
+            <column datatype='integer' name='patient_age' ordinal='3' />
+            <column datatype='integer' name='patient_sat_score' ordinal='4' />
+            <column datatype='string' name='patient_first_inital' ordinal='5' />
+            <column datatype='string' name='patient_last_name' ordinal='6' />
+            <column datatype='string' name='patient_race' ordinal='7' />
+            <column datatype='boolean' name='patient_admin_flag' ordinal='8' />
+            <column datatype='integer' name='patient_waittime' ordinal='9' />
+            <column datatype='string' name='department_referral' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K9217:no:A1:K9217:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[patient_id]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>patient_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[patient_gender]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>patient_gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[patient_age]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>patient_age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_sat_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[patient_sat_score]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>patient_sat_score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_first_inital</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[patient_first_inital]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>patient_first_inital</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_last_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[patient_last_name]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>patient_last_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_race</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[patient_race]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>patient_race</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_admin_flag</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[patient_admin_flag]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>patient_admin_flag</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_waittime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[patient_waittime]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>patient_waittime</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_referral</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[department_referral]</local-name>
+            <parent-name>[Hospital ER]</parent-name>
+            <remote-alias>department_referral</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='AgeGroupings' datatype='string' name='[Calculation_1928103601453912064]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [patient_age] &gt;=0 and [patient_age] &lt;=18  then &apos;0-18&apos;&#13;&#10;ELSEIF [patient_age] &gt;=19 and [patient_age] &lt;=60  then &apos;19-60&apos;&#13;&#10;ELSEIF [patient_age] &gt;=61 THEN &apos;60+&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Hospital ER' datatype='table' name='[__tableau_internal_object_id__].[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Department Referral' datatype='string' name='[department_referral]' role='dimension' type='nominal' />
+      <column caption='Patient Admin Flag' datatype='boolean' name='[patient_admin_flag]' role='dimension' type='nominal' />
+      <column caption='Patient Age' datatype='integer' name='[patient_age]' role='measure' type='quantitative' />
+      <column caption='Patient First Inital' datatype='string' name='[patient_first_inital]' role='dimension' type='nominal' />
+      <column caption='Patient Gender' datatype='string' name='[patient_gender]' role='dimension' type='nominal' />
+      <column caption='Patient Id' datatype='string' name='[patient_id]' role='dimension' type='nominal' />
+      <column caption='Patient Last Name' datatype='string' name='[patient_last_name]' role='dimension' type='nominal' />
+      <column caption='Patient Race' datatype='string' name='[patient_race]' role='dimension' type='nominal' />
+      <column caption='Patient Sat Score' datatype='integer' name='[patient_sat_score]' role='measure' type='quantitative' />
+      <column caption='Patient Waittime' datatype='integer' name='[patient_waittime]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1928103601453912064]' derivation='None' name='[none:Calculation_1928103601453912064:nk]' pivot='key' type='nominal' />
+      <column-instance column='[patient_gender]' derivation='None' name='[none:patient_gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/NathanJC/AppData/Local/Temp/TableauTemp/#TableauTemp_0y0g3dd00obj3v1g9gos51heywup.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/04/2024 06:33:35 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Hospital ER</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>9216</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patient_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[patient_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Hospital ER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9216</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patient_gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[patient_gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Hospital ER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patient_age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[patient_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_age</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Hospital ER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patient_sat_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[patient_sat_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_sat_score</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Hospital ER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patient_first_inital</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[patient_first_inital]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_first_inital</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Hospital ER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patient_last_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[patient_last_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_last_name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Hospital ER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5436</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patient_race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[patient_race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_race</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Hospital ER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patient_admin_flag</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[patient_admin_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_admin_flag</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Hospital ER</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patient_waittime</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[patient_waittime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_waittime</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Hospital ER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>department_referral</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[department_referral]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>department_referral</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Hospital ER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospital ER_21FF94989E8449F0916BD77F6C6A5161]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:patient_gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;NC&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1928103601453912064:nk]' type='palette'>
+            <map to='#4f6980'>
+              <bucket>&quot;0-18&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;60+&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;19-60&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='date' />
+        <field-sort-custom-order field='patient_id' />
+        <field-sort-custom-order field='patient_gender' />
+        <field-sort-custom-order field='patient_age' />
+        <field-sort-custom-order field='patient_sat_score' />
+        <field-sort-custom-order field='patient_first_inital' />
+        <field-sort-custom-order field='patient_last_name' />
+        <field-sort-custom-order field='patient_race' />
+        <field-sort-custom-order field='Calculation_1928103601495306241' />
+        <field-sort-custom-order field='patient_admin_flag' />
+        <field-sort-custom-order field='patient_waittime' />
+        <field-sort-custom-order field='department_referral' />
+        <field-sort-custom-order field='Calculation_1928103601453912064' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Hospital ER' id='Hospital ER_21FF94989E8449F0916BD77F6C6A5161'>
+            <properties context=''>
+              <relation connection='excel-direct.0nbbhxa0nzkfhv1eh6h5v04m0j70' name='Hospital ER' table='[&apos;Hospital ER$&apos;]' type='table'>
+                <columns gridOrigin='A1:K9217:no:A1:K9217:0' header='yes' outcome='6'>
+                  <column datatype='datetime' name='date' ordinal='0' />
+                  <column datatype='string' name='patient_id' ordinal='1' />
+                  <column datatype='string' name='patient_gender' ordinal='2' />
+                  <column datatype='integer' name='patient_age' ordinal='3' />
+                  <column datatype='integer' name='patient_sat_score' ordinal='4' />
+                  <column datatype='string' name='patient_first_inital' ordinal='5' />
+                  <column datatype='string' name='patient_last_name' ordinal='6' />
+                  <column datatype='string' name='patient_race' ordinal='7' />
+                  <column datatype='boolean' name='patient_admin_flag' ordinal='8' />
+                  <column datatype='integer' name='patient_waittime' ordinal='9' />
+                  <column datatype='string' name='department_referral' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='#Patients by Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Patients by Age in ER</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column caption='AgeGroupings' datatype='string' name='[Calculation_1928103601453912064]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [patient_age] &gt;=0 and [patient_age] &lt;=18  then &apos;0-18&apos;&#13;&#10;ELSEIF [patient_age] &gt;=19 and [patient_age] &lt;=60  then &apos;19-60&apos;&#13;&#10;ELSEIF [patient_age] &gt;=61 THEN &apos;60+&apos;&#13;&#10;END' />
+            </column>
+            <column-instance column='[patient_id]' derivation='Count' name='[cnt:patient_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1928103601453912064]' derivation='None' name='[none:Calculation_1928103601453912064:nk]' pivot='key' type='nominal' />
+            <column caption='Patient Age' datatype='integer' name='[patient_age]' role='measure' type='quantitative' />
+            <column caption='Patient Id' datatype='string' name='[patient_id]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[tmn:date:qk]' scope='cols' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:Calculation_1928103601453912064:nk]' />
+              <text column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:Calculation_1928103601453912064:nk]' />
+              <lod column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:Calculation_1928103601453912064:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]</rows>
+        <cols>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{85EE4DC2-D297-44B0-AEB2-907ED5A3F3D8}' />
+    </worksheet>
+    <worksheet name='#Pats ER'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_id]' derivation='Count' name='[cnt:patient_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Patient Id' datatype='string' name='[patient_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='13'>Number of Patients Visiting ER</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Medium' fontsize='13'><![CDATA[<[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C477A7DC-D3EA-41CC-A308-252A229A4851}' />
+    </worksheet>
+    <worksheet name='.'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff' fontsize='9'>Gender-wise distribution of patients</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_gender]' derivation='None' name='[none:patient_gender:nk]' pivot='key' type='nominal' />
+            <column caption='Patient Gender' datatype='string' name='[patient_gender]' role='dimension' type='nominal' />
+            <column caption='Patient Id' datatype='string' name='[patient_id]' role='dimension' type='nominal' />
+            <column-instance column='[patient_id]' derivation='Count' name='[pcto:cnt:patient_id:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_gender:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='211' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_gender:nk]' />
+              <wedge-size column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[pcto:cnt:patient_id:qk:1]' />
+              <size column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[pcto:cnt:patient_id:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6C499EA3-92ED-438F-9E1A-F4B3BD1D8161}' />
+    </worksheet>
+    <worksheet name='Average Satisfaction'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_sat_score]' derivation='Avg' name='[avg:patient_sat_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Patient Sat Score' datatype='integer' name='[patient_sat_score]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_sat_score:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='width' value='336' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_sat_score:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Average Patient Satisfaction Score
+</run>
+                <run fontsize='14'><![CDATA[<[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_sat_score:qk]>]]></run>
+                <run> / 10</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FD54233C-AF7E-41C5-B6E6-EA55A3DBE450}' />
+    </worksheet>
+    <worksheet name='Average Waittime'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_waittime]' derivation='Avg' name='[avg:patient_waittime:qk]' pivot='key' type='quantitative' />
+            <column caption='Patient Waittime' datatype='integer' name='[patient_waittime]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Average Wait-time &#10;</run>
+                <run fontsize='14'><![CDATA[<[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]>]]></run>
+                <run> min</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{58E302D3-B57B-45AF-8C0B-1FACBCBD2AFB}' />
+    </worksheet>
+    <worksheet name='Bar of Number of patients by month'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_id]' derivation='Count' name='[cnt:patient_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Patient Id' datatype='string' name='[patient_id]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]</rows>
+        <cols>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{995A000A-E338-4F71-B7E0-DB93C378BB1F}' />
+    </worksheet>
+    <worksheet name='Dept Referral'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_id]' derivation='Count' name='[cnt:patient_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Department Referral' datatype='string' name='[department_referral]' role='dimension' type='nominal' />
+            <column-instance column='[department_referral]' derivation='None' name='[none:department_referral:nk]' pivot='key' type='nominal' />
+            <column caption='Patient Id' datatype='string' name='[patient_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:department_referral:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:department_referral:nk]' />
+              <groupfilter function='member' level='[none:department_referral:nk]' member='&quot;None&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:department_referral:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:department_referral:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' scope='cols' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' />
+              <text column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:department_referral:nk]</rows>
+        <cols>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]</cols>
+      </table>
+      <simple-id uuid='{31570EF4-6FEF-466F-B319-D648601970E8}' />
+    </worksheet>
+    <worksheet name='HeatMap'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_waittime]' derivation='Avg' name='[avg:patient_waittime:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Hour' name='[hr:date:ok]' pivot='key' type='ordinal' />
+            <column caption='Patient Waittime' datatype='integer' name='[patient_waittime]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Weekday' name='[wd:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[hr:date:ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[hr:date:ok]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[wd:date:ok]' value='82' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]' />
+              <text column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[hr:date:ok]</rows>
+        <cols>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[wd:date:ok]</cols>
+      </table>
+      <simple-id uuid='{67F443A1-E1F0-42ED-BD89-90DB5E095395}' />
+    </worksheet>
+    <worksheet name='Patient Gender'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_gender]' derivation='None' name='[none:patient_gender:nk]' pivot='key' type='nominal' />
+            <column caption='Patient Gender' datatype='string' name='[patient_gender]' role='dimension' type='nominal' />
+            <column caption='Patient Last Name' datatype='string' name='[patient_last_name]' role='dimension' type='nominal' />
+            <column-instance column='[patient_last_name]' derivation='Count' name='[pcto:cnt:patient_last_name:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[pcto:cnt:patient_last_name:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_gender:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{AB6848E7-ED6C-450A-B8D9-BCF2FBB09D21}' />
+    </worksheet>
+    <worksheet name='Patient Race'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_id]' derivation='Count' name='[cnt:patient_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[patient_race]' derivation='None' name='[none:patient_race:nk]' pivot='key' type='nominal' />
+            <column caption='Patient Id' datatype='string' name='[patient_id]' role='dimension' type='nominal' />
+            <column caption='Patient Race' datatype='string' name='[patient_race]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_race:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' scope='cols' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' />
+              <text column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_race:nk]</rows>
+        <cols>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]</cols>
+      </table>
+      <simple-id uuid='{AAA6A5A4-1193-4ADC-B2D9-7E5B864C6FB6}' />
+    </worksheet>
+    <worksheet name='Patient Race WrdCloud'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_race]' derivation='Count' name='[cnt:patient_race:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[patient_race]' derivation='None' name='[none:patient_race:nk]' pivot='key' type='nominal' />
+            <column caption='Patient Race' datatype='string' name='[patient_race]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <size column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_race:qk]' />
+              <text column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_race:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7F297687-75FF-428B-8A63-56C58A0622E8}' />
+    </worksheet>
+    <worksheet name='Patient Satisfaction'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_sat_score]' derivation='Avg' name='[avg:patient_sat_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Patient Sat Score' datatype='integer' name='[patient_sat_score]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_sat_score:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[tmn:date:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_sat_score:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_sat_score:qk]</rows>
+        <cols>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{9BAFEED1-3E42-4E73-8267-FBB2F9A5D093}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_id]' derivation='None' name='[none:patient_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[patient_sat_score]' derivation='None' name='[none:patient_sat_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[patient_waittime]' derivation='None' name='[none:patient_waittime:qk]' pivot='key' type='quantitative' />
+            <column caption='Patient Id' datatype='string' name='[patient_id]' role='dimension' type='nominal' />
+            <column caption='Patient Sat Score' datatype='integer' name='[patient_sat_score]' role='measure' type='quantitative' />
+            <column caption='Patient Waittime' datatype='integer' name='[patient_waittime]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_sat_score:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_waittime:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_sat_score:qk]</column>
+            <column>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_waittime:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_id:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_sat_score:qk]</rows>
+        <cols>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_waittime:qk]</cols>
+      </table>
+      <simple-id uuid='{ACDB554A-6A98-4F4C-8839-0AB8092BF83A}' />
+    </worksheet>
+    <worksheet name='Waittime Average'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital ER (Hospital ER)' name='federated.1yn0lgv0tkwi6b1bwruna0takq9g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yn0lgv0tkwi6b1bwruna0takq9g'>
+            <column-instance column='[patient_waittime]' derivation='Avg' name='[avg:patient_waittime:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Patient Waittime' datatype='integer' name='[patient_waittime]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[tmn:date:qk]' scope='cols' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]</rows>
+        <cols>[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{8E7C9FA5-B4B8-4503-94B2-EC6C1EFF93C5}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='..'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#dfedeb' />
+        </style-rule>
+      </style>
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='5' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A0885185-426B-4A9C-82E9-3529071CAEFB}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#acf1ef' />
+        </style-rule>
+      </style>
+      <size maxheight='801' maxwidth='1657' minheight='801' minwidth='1657' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='3' param='horz' type-v2='layout-flow' w='13518' x='483' y='999'>
+            <zone h='98002' id='5' param='vert' type-v2='layout-flow' w='13518' x='483' y='999'>
+              <zone h='11611' id='25' name='#Patients by Age' pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:Calculation_1928103601453912064:nk]' type-v2='color' w='13518' x='483' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='2247' id='8' type-v2='text' w='13518' x='483' y='12610'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9114' id='28' name='HeatMap' pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]' type-v2='color' w='13518' x='483' y='14857'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28090' id='36' name='.' w='13518' x='483' y='23971'>
+                <layout-cache fixed-size-h='217' fixed-size-w='211' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11611' id='37' name='.' pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_gender:nk]' type-v2='color' w='13518' x='483' y='52061'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='background-color' value='#005767' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='29963' id='6' param='vert' type-v2='layout-flow' w='42758' x='56759' y='30337'>
+            <zone h='27467' id='26' name='Patient Race' w='41550' x='57363' y='31585'>
+              <layout-cache fixed-size-h='240' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='10986' id='9' type-v2='text' w='85516' x='14001' y='999'>
+            <formatted-text>
+              <run bold='true' fontsize='22'>Emergency Room (ER) dashboard</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='18352' id='10' param='horz' type-v2='layout-flow' w='24080' x='14001' y='11985'>
+            <zone fixed-size='362' h='15856' id='23' is-fixed='true' name='#Pats ER' w='22872' x='14605' y='13233'>
+              <layout-cache type-h='cell' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='9176' id='13' param='horz' type-v2='layout-flow' w='41702' x='57815' y='21161'>
+            <zone h='9176' id='33' name='Patient Satisfaction' show-title='false' w='41702' x='57815' y='21161'>
+              <layout-cache minwidth='130' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+              <format attr='background-color' value='#e6e6e6' />
+            </zone-style>
+          </zone>
+          <zone h='8989' id='15' param='horz' type-v2='layout-flow' w='19734' x='38081' y='21348'>
+            <zone h='8989' id='30' name='Waittime Average' show-title='false' w='19734' x='38081' y='21348'>
+              <layout-cache minwidth='130' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+              <format attr='background-color' value='#e6e6e6' />
+            </zone-style>
+          </zone>
+          <zone h='38701' id='16' param='horz' type-v2='layout-flow' w='42758' x='56759' y='60300'>
+            <zone h='36205' id='29' name='Dept Referral' w='41550' x='57363' y='61548'>
+              <layout-cache minwidth='240' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='10' />
+              <format attr='background-color' value='#e6e6e6' />
+            </zone-style>
+          </zone>
+          <zone h='34332' id='17' param='horz' type-v2='layout-flow' w='42758' x='14001' y='30337'>
+            <zone h='31836' id='24' name='#Patients by Age' w='41550' x='14605' y='31585'>
+              <layout-cache minwidth='134' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='10' />
+              <format attr='background-color' value='#e6e6e6' />
+            </zone-style>
+          </zone>
+          <zone h='34332' id='18' param='horz' type-v2='layout-flow' w='42758' x='14001' y='64669'>
+            <zone h='31836' id='27' name='HeatMap' w='41550' x='14605' y='65917'>
+              <layout-cache fixed-size-h='560' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='10' />
+              <format attr='background-color' value='#e6e6e6' />
+            </zone-style>
+          </zone>
+          <zone h='9363' id='19' param='horz' type-v2='layout-flow' w='9867' x='47948' y='11985'>
+            <zone h='7615' id='31' name='Average Waittime' show-title='false' w='9867' x='47948' y='11985'>
+              <layout-cache cell-count-w='1' fixed-size-h='53' type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='background-color' value='#ffffff' />
+            </zone-style>
+          </zone>
+          <zone h='9363' id='20' param='horz' type-v2='layout-flow' w='9867' x='38081' y='11985'>
+            <zone h='9363' id='32' is-scaled='1' param='K:/K DRIVE/BTech/zFinalY BTech/Sem 7/Advanced Data Visualization/EXPERIMENT6_202160009/pngegg.png' type-v2='bitmap' w='9867' x='38081' y='11985'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='background-color' value='#e6e6e6' />
+            </zone-style>
+          </zone>
+          <zone h='9176' id='22' param='horz' type-v2='layout-flow' w='41702' x='57815' y='11985'>
+            <zone h='7615' id='34' name='Average Satisfaction' show-title='false' w='41702' x='57815' y='11985'>
+              <layout-cache fixed-size-h='53' fixed-size-w='336' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#e6e6e6' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='background-color' value='#e6e6e6' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='38' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone forceUpdate='true' h='10986' id='9' type-v2='text' w='85516' x='14001' y='999'>
+                  <formatted-text>
+                    <run bold='true' fontsize='22'>Emergency Room (ER) dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='75' h='9363' id='32' is-fixed='true' is-scaled='1' param='K:/K DRIVE/BTech/zFinalY BTech/Sem 7/Advanced Data Visualization/EXPERIMENT6_202160009/pngegg.png' type-v2='bitmap' w='9867' x='38081' y='11985'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='53' h='7615' id='31' is-fixed='true' name='Average Waittime' show-title='false' w='9867' x='47948' y='11985'>
+                  <layout-cache cell-count-w='1' fixed-size-h='53' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='53' h='7615' id='34' is-fixed='true' name='Average Satisfaction' show-title='false' w='41702' x='57815' y='11985'>
+                  <layout-cache fixed-size-h='53' fixed-size-w='336' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2247' id='8' type-v2='text' w='13518' x='483' y='12610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='119' h='15856' id='23' is-fixed='true' name='#Pats ER' w='22872' x='14605' y='13233'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='66' h='9176' id='33' is-fixed='true' name='Patient Satisfaction' show-title='false' w='41702' x='57815' y='21161'>
+                  <layout-cache minwidth='130' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='64' h='8989' id='30' is-fixed='true' name='Waittime Average' show-title='false' w='19734' x='38081' y='21348'>
+                  <layout-cache minwidth='130' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='217' h='28090' id='36' is-fixed='true' name='.' w='13518' x='483' y='23971'>
+                  <layout-cache fixed-size-h='217' fixed-size-w='211' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11611' id='37' name='.' pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_gender:nk]' type-v2='color' w='13518' x='483' y='52061'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='247' h='31836' id='24' is-fixed='true' name='#Patients by Age' w='41550' x='14605' y='31585'>
+                  <layout-cache minwidth='134' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='11611' id='25' name='#Patients by Age' pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:Calculation_1928103601453912064:nk]' type-v2='color' w='13518' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='212' h='27467' id='26' is-fixed='true' name='Patient Race' w='41550' x='57363' y='31585'>
+                  <layout-cache fixed-size-h='240' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36205' id='29' is-fixed='true' name='Dept Referral' w='41550' x='57363' y='61548'>
+                  <layout-cache minwidth='240' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='247' h='31836' id='27' is-fixed='true' name='HeatMap' w='41550' x='14605' y='65917'>
+                  <layout-cache fixed-size-h='560' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9114' id='28' name='HeatMap' pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]' type-v2='color' w='13518' x='483' y='14857'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B10A44DE-AE22-42C3-B833-83E5E2DC47B3}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='#Pats ER'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{25134EB1-9565-47BB-9871-2E28B530E8BC}' />
+    </window>
+    <window class='worksheet' name='Patient Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{993C7D5B-C6C1-4ADB-9BED-B42B46D48C7F}' />
+    </window>
+    <window class='worksheet' name='Patient Satisfaction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E7660434-D6C0-4907-8C9E-2BEDB9A33511}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Waittime Average'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{441470E5-B029-4BE2-9BB0-EEEBA5D385D8}' />
+    </window>
+    <window class='worksheet' name='Average Satisfaction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C381A810-7C8F-4981-8454-7904462B871D}' />
+    </window>
+    <window class='worksheet' name='Average Waittime'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B2A4D7DB-A4D8-4473-8D59-6E408354E75F}' />
+    </window>
+    <window class='worksheet' name='#Patients by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:Calculation_1928103601453912064:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1C3D649E-757D-4042-AEEC-F2142A912659}' />
+    </window>
+    <window class='worksheet' name='HeatMap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[avg:patient_waittime:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B5005D46-C155-4B07-8FCD-527816291E4F}' />
+    </window>
+    <window class='worksheet' name='Patient Race'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2AB12839-8D00-4446-9F81-51F8117BEB68}' />
+    </window>
+    <window class='worksheet' name='Dept Referral'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[cnt:patient_id:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9B509344-A519-43A3-9B2F-646347EC4486}' />
+    </window>
+    <window class='worksheet' name='.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[none:patient_gender:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1yn0lgv0tkwi6b1bwruna0takq9g].[pcto:cnt:patient_id:qk:1]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{51DDE760-61D8-49E0-AF36-4549B8374A23}' />
+    </window>
+    <window class='dashboard' name='..'>
+      <viewpoints />
+      <active id='-1' />
+      <device-preview selected='Desktop' visible='true'>
+        <device name='iPad Pro 12.9-inch' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{86355585-C47F-42CC-A95B-0057F3BF805D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='#Patients by Age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='#Pats ER'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='.' />
+        <viewpoint name='Average Satisfaction' />
+        <viewpoint name='Average Waittime'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Dept Referral' />
+        <viewpoint name='HeatMap' />
+        <viewpoint name='Patient Race' />
+        <viewpoint name='Patient Satisfaction'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Waittime Average'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{69C44923-086E-4DCA-8E61-D72F0EFA1046}' />
+    </window>
+    <window class='worksheet' name='Patient Race WrdCloud'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{64CBD9DC-BA31-4FB4-ADC8-D19E7BFBDC68}' />
+    </window>
+    <window class='worksheet' name='Bar of Number of patients by month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E65F6CAC-D19C-4B4B-AE5C-D6D899901B4C}' />
+    </window>
+    <window class='worksheet' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6C5EDE44-B255-46B8-A37F-158994513538}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Waittime Average' width='192'>
+      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
+      sCrpAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
